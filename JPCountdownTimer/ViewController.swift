@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var countdownTimer: JPCountdownTimer!
+    @IBOutlet weak var countdownTimer: JPCountdownTimerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

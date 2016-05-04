@@ -12,8 +12,8 @@
 		F46941B21CD9BCAC005E888B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46941B01CD9BCAC005E888B /* Main.storyboard */; };
 		F46941B41CD9BCAC005E888B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F46941B31CD9BCAC005E888B /* Assets.xcassets */; };
 		F46941B71CD9BCAC005E888B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46941B51CD9BCAC005E888B /* LaunchScreen.storyboard */; };
-		F46941C01CD9BCCE005E888B /* JPCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46941BF1CD9BCCE005E888B /* JPCountdownTimer.swift */; };
-		F46941C21CD9BD64005E888B /* JPCountdownTimer.xib in Resources */ = {isa = PBXBuildFile; fileRef = F46941C11CD9BD64005E888B /* JPCountdownTimer.xib */; };
+		F46941C01CD9BCCE005E888B /* JPCountdownTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46941BF1CD9BCCE005E888B /* JPCountdownTimerView.swift */; };
+		F46941C21CD9BD64005E888B /* JPCountdownTimerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F46941C11CD9BD64005E888B /* JPCountdownTimerView.xib */; };
 		F46941C41CD9C1C1005E888B /* NSLayoutConstraint+ConveniennceMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46941C31CD9C1C1005E888B /* NSLayoutConstraint+ConveniennceMethods.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +25,8 @@
 		F46941B31CD9BCAC005E888B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F46941B61CD9BCAC005E888B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F46941B81CD9BCAC005E888B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F46941BF1CD9BCCE005E888B /* JPCountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPCountdownTimer.swift; sourceTree = "<group>"; };
-		F46941C11CD9BD64005E888B /* JPCountdownTimer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPCountdownTimer.xib; sourceTree = "<group>"; };
+		F46941BF1CD9BCCE005E888B /* JPCountdownTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPCountdownTimerView.swift; sourceTree = "<group>"; };
+		F46941C11CD9BD64005E888B /* JPCountdownTimerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPCountdownTimerView.xib; sourceTree = "<group>"; };
 		F46941C31CD9C1C1005E888B /* NSLayoutConstraint+ConveniennceMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+ConveniennceMethods.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +60,7 @@
 		F46941AB1CD9BCAC005E888B /* JPCountdownTimer */ = {
 			isa = PBXGroup;
 			children = (
-				F46941BE1CD9BCBD005E888B /* JPCountdownTimer */,
+				F46941BE1CD9BCBD005E888B /* JPCountdownTimerView */,
 				F46941AC1CD9BCAC005E888B /* AppDelegate.swift */,
 				F46941AE1CD9BCAC005E888B /* ViewController.swift */,
 				F46941B01CD9BCAC005E888B /* Main.storyboard */,
@@ -72,13 +72,13 @@
 			path = JPCountdownTimer;
 			sourceTree = "<group>";
 		};
-		F46941BE1CD9BCBD005E888B /* JPCountdownTimer */ = {
+		F46941BE1CD9BCBD005E888B /* JPCountdownTimerView */ = {
 			isa = PBXGroup;
 			children = (
-				F46941BF1CD9BCCE005E888B /* JPCountdownTimer.swift */,
-				F46941C11CD9BD64005E888B /* JPCountdownTimer.xib */,
+				F46941BF1CD9BCCE005E888B /* JPCountdownTimerView.swift */,
+				F46941C11CD9BD64005E888B /* JPCountdownTimerView.xib */,
 			);
-			name = JPCountdownTimer;
+			name = JPCountdownTimerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F46941B71CD9BCAC005E888B /* LaunchScreen.storyboard in Resources */,
-				F46941C21CD9BD64005E888B /* JPCountdownTimer.xib in Resources */,
+				F46941C21CD9BD64005E888B /* JPCountdownTimerView.xib in Resources */,
 				F46941B41CD9BCAC005E888B /* Assets.xcassets in Resources */,
 				F46941B21CD9BCAC005E888B /* Main.storyboard in Resources */,
 			);
@@ -156,7 +156,7 @@
 				F46941AF1CD9BCAC005E888B /* ViewController.swift in Sources */,
 				F46941C41CD9C1C1005E888B /* NSLayoutConstraint+ConveniennceMethods.swift in Sources */,
 				F46941AD1CD9BCAC005E888B /* AppDelegate.swift in Sources */,
-				F46941C01CD9BCCE005E888B /* JPCountdownTimer.swift in Sources */,
+				F46941C01CD9BCCE005E888B /* JPCountdownTimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

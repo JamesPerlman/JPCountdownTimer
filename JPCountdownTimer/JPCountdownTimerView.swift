@@ -1,6 +1,6 @@
 //
-//  JPCountdownTimer.swift
-//  JPCountdownTimer
+//  JPCountdownTimerView.swift
+//  JPCountdownTimerView
 //
 //  Created by James on 5/4/16.
 //  Copyright © 2016 James Perlman. All rights reserved.
@@ -11,7 +11,7 @@ import UIKit
 import QuartzCore
 
 @IBDesignable // so we can use it in interface builder
-class JPCountdownTimer: UIView {
+class JPCountdownTimerView: UIView {
     
     // MARK: Designable Vars
     @IBInspectable var initialTitle:String = "TITLE"
@@ -104,8 +104,8 @@ class JPCountdownTimer: UIView {
     
     //
     func loadNib() {
-        let bundle = NSBundle (forClass: JPCountdownTimer.self)
-        bundle.loadNibNamed("JPCountdownTimer", owner: self, options: nil)
+        let bundle = NSBundle (forClass: JPCountdownTimerView.self)
+        bundle.loadNibNamed("JPCountdownTimerView", owner: self, options: nil)
         
         // adding the top level view to the view hierarchy
         view!.frame = self.bounds
