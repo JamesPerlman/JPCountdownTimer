@@ -13,12 +13,24 @@ import QuartzCore
 @IBDesignable // so we can use it in interface builder
 class JPCountdownTimer: UIView {
     
-    @IBOutlet weak var label: UILabel!
+    // MARK: Designable Vars
+    @IBInspectable var initialTitle:String = "TITLE"
     
-    var completionClosure:(()->Void) = {}
-    var titles:[String] = []
-    var index:Int = 0
+    @IBInspectable var fontSize:CGFloat = 36.0 {
+        didSet {
+            label.font = label.font.fontWithSize(fontSize)
+        }
+    }
     
+    // MARK: Private vars
+    private var completionClosure:(()->Void) = {}
+    private var titles:[String] = []
+    private var index:Int = 0
+    
+   @IBOutlet private weak var label: UILabel!
+    
+    
+    // MARK: Initializers
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         loadNib()
@@ -78,9 +90,21 @@ class JPCountdownTimer: UIView {
     // TODO: Put this into an extension
     @IBOutlet weak private var view:UIView?
     
+    
+    override func prepareForInterfaceBuilder() {
+        self.label.text = initialTitle
+    }
+    
+    // For interface builder (tells auto-layout what size to use for this view)
+    
+    override func intrinsicContentSize() -> CGSize {
+        // we're just gonna use the label's intrinsic content size
+        return label.intrinsicContentSize()
+    }
+    
+    //
     func loadNib() {
         let bundle = NSBundle (forClass: JPCountdownTimer.self)
-        
         bundle.loadNibNamed("JPCountdownTimer", owner: self, options: nil)
         
         // adding the top level view to the view hierarchy
@@ -89,5 +113,7 @@ class JPCountdownTimer: UIView {
         
         self.addSubview(view!);
         self.addConstraints(NSLayoutConstraint.equalSizeAndCentersWithItem(view!, toItem: self))
+        
+        self.label.text = initialTitle
     }
 }
